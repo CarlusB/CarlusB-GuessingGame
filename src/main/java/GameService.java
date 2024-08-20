@@ -12,7 +12,7 @@ public class GameService {
      */
     public double secretNumber;
 
-    /**
+    /**. Finally I ins
      * A constructor that will create a GameService object and, by default, set the secretNumber variable to 3.14.
      * There is no need to change anything in this constructor.
      */
@@ -27,6 +27,10 @@ public class GameService {
      * @return true if guessNumber is equal to the secretNumber, false otherwise.
      */
     public boolean checkGuess(double guessNumber) {
-        return false;
+        if(this.secretNumber == guessNumber){
+            return true;
+        }else{
+            return false;
+        }
     }
 }
